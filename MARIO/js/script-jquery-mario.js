@@ -5,37 +5,25 @@
     @date -13/06/2016
     */
 
-    var yoshi = 
-
-
-
-window.onkeydown = function(e) {
-    var key = e.keyCode || e.which;
-  
-    switch (key) {
-
-
-    case 81:
-         $( "#yoshi" ).animate({ "left": "-=50px" },"fast");
-          $("#isho" ).hide();
-          $("#yoshi" ).show();
-                break;
-
-    case 68:
-       $("#isho" ).show();
-       $("#isho" ).animate({ "left": "+=50px" },"fast");
-        $("#yoshi" ).hide();
-
-       break;
     
 
-    case 83:
 
-        $( "#yoshi" ).animate({ "top": "-=80px" },"fast"); 
-        $( "#yoshi" ).animate({ "top": "+=80px" },"fast");
-
-    default:
+$( document).keydown(function( event ) {
+  switch(parseInt(event.which,10)) {
+      // On a appuyé sur la touche flèche gauche
+      case 81:
+        $(".yoshi").animate({left: "-=30px"}, 20);
+        $(".yoshi").css({transform: 'scaleX(1)'});
         break;
-    }
-};
+      // On a appuyé sur la touche flèche vers le haut//
+      case 68:
+        $(".yoshi").animate({left: "+=30px"}, 20);
+        $(".yoshi").css({transform: 'scaleX(-1)'});
+        break;
+      case 83:
+        $(".yoshi").animate({top: "-=80px"}, 100);
+        $(".yoshi").animate({top: "+=80px"}, 100);
+        break;
+      }
 
+      });

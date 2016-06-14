@@ -12,13 +12,12 @@ html{
 	background-color: #01FFFF;
 	background-repeat:no-repeat;
 	background-size: 11000px;
-	background-attachment:local;
 	}
 
 
 
 
-#perso{
+.perso{
   	  	position:absolute;
   		margin:530px 700px;
  		display: inline-block;
@@ -26,22 +25,13 @@ html{
 }
  
 
- #yoshi{
+ .yoshi{
  		position: absolute;
 		width: 100px ;
  		height:100px ;
 		display: inline-block; 
-		margin-left: 530px;
-		margin-top: 530px;
+		background-image: url("../image/yoshi.gif");
+		background-size: 100%;
  }
 
-#isho{
- 		position: absolute;
-		width: 100px ;
- 		height:100px ;
-		display: inline-block; 
-		margin-left: 530px;
-		margin-top: 530px;
-		-webkit-transform:rotate(180deg);
-}
 
